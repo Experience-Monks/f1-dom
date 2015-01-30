@@ -1,0 +1,32 @@
+{
+  "name": "f1-dom",
+  "version": "1.0.0",
+  "description": "f1 animation parsing functions for the dom",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Mikko Haapoja",
+    "email": "me@mikkoh.com",
+    "url": "https://github.com/mikkoh"
+  },
+  "dependencies": {
+    "gl-mat4": "^1.0.2"
+  },
+  "devDependencies": {
+    "prova": "^2.1.1"
+  },
+  "scripts": {
+    "test": "prova test.js"
+  },
+  "keywords": [
+    "f1,ui,dom,html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jam3/f1-dom.git"
+  },
+  "homepage": "https://github.com/jam3/f1-dom",
+  "bugs": {
+    "url": "https://github.com/jam3/f1-dom/issues"
+  }
+}
