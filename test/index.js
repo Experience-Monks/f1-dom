@@ -3,6 +3,7 @@ var supportedProps = require( '../supportedProps' );
 var transform = require( '../transform' );
 var transformOrigin = require( '../transformOrigin' );
 var opacity = require( '../opacity' );
+var textAndHtml = require( '../textAndHtml' );
 
 var toApply = {
 
@@ -23,7 +24,9 @@ test( 'check supported props', function( t ) {
     rotation: Array,
     perspective: Number,
     anchor: Array,
-    alpha: Number
+    alpha: Number,
+    text: String,
+    html: String
   }, 'supported props do not match' );
 
   t.end();
@@ -66,6 +69,28 @@ test( 'apply opacity', function( t ) {
   document.body.appendChild( el );
 
   t.equal( el.style[ 'opacity' ], '0.5', 'transform origin correct' );
+
+  t.end();
+});
+
+test( 'apply html', function( t ) {
+
+  var el = getEL();
+
+  textAndHtml( el, { html: '<div>snakey snake</div>' } );
+
+  t.equal( el.innerHTML, '<div>snakey snake</div>', 'html set correctly' );
+
+  t.end();
+});
+
+test( 'apply text', function( t ) {
+
+  var el = getEL();
+
+  textAndHtml( el, { text: '<div>snakey snake</div>' } );
+
+  t.equal( el.innerHTML, '&lt;div&gt;snakey snake&lt;/div&gt;', 'text set correctly' );
 
   t.end();
 });

@@ -5,5 +5,7 @@ module.exports = {
   rotation: Array, // transform
   perspective: Number, // transform
   anchor: Array, // transformOrigin,
-  alpha: Number // opacity
+  alpha: Number, // opacity,
+  text: String, // escaped html
+  html: String // unescaped html
 };

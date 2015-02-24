@@ -2,5 +2,6 @@ module.exports = [
 
   require( './transform' ),
   require( './transformOrigin' ),
-  require( './opacity' )
+  require( './opacity' ),
+  require( './textAndHtml' )
 ];

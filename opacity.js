@@ -1,4 +1,7 @@
 module.exports = function( item, data ) {
 
-  item.style.opacity = data.alpha !== undefined ? data.alpha : 1;
+  if( data.alpha !== undefined ) {
+
+    item.style.opacity = data.alpha;
+  }
 };
