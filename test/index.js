@@ -114,7 +114,9 @@ test( 'apply text', function( t ) {
 
 test( 'apply color 4', function( t ) {
 
-  // cannot use a real html element here since browser
+  // cannot use a real html element here since Webkit browser
+  // Does something like Math.floor(0.5 * 255) / 255 internally
+  // var el = getEL();
   var el = {
     style: {}
   };
