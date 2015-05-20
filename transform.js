@@ -40,8 +40,8 @@ module.exports = function( item, data ) {
     cssValue = 'perspective( ' + perspective + 'px ) matrix3d(' + Array.prototype.join.call( transform, ',' ) + ')';
 
     item.style[ 'transform' ] = cssValue;
-    item.style[ '--webkit-transform' ] = cssValue;
-    item.style[ '--ms-transform' ] = cssValue;
-    item.style[ '--moz-transform' ] = cssValue;
+    item.style[ '-webkit-transform' ] = cssValue;
+    item.style[ '-ms-transform' ] = cssValue;
+    item.style[ '-moz-transform' ] = cssValue;
   }
 };
