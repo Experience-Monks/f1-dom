@@ -14,7 +14,7 @@ var toApply = {
   backgroundColor: [ 22, 33, 44, 0.75 ],
   position: [ 500, 100, 200 ],
   scale: [ 0.5, 0.63, 0.8 ],
-  rotation: [ 40.3, 23.4, 12 ],
+  rotation: [ 45, 0, 45 ],
   perspective: 20,
   anchor: [ 0.33, 0.8 ],
   alpha: 0.5
@@ -58,7 +58,7 @@ test( 'apply transform', function( t ) {
   document.body.appendChild( el );
 
   t.equal( el.style.transform, 
-          'perspective(20px) matrix3d(-0.0680306479334831, 0.0197484157979488, -0.792163550853729, 0, -0.0432579629123211, -0.627515733242035, -0.0157152693718672, 0, -0.493457764387131, 0.052287258207798, 0.110589414834976, 0, 500, 100, 200, 1)',
+          'matrix3d(0.262660980224609, 0.281608939170837, 0.579229474067688, 0, -0.425451755523682, 0.173856809735298, 0.357598662376404, 0, 0, -0.536069214344025, 0.420257598161697, -0.0500000007450581, 500, 100, 200, 1)',
           'transform correct' );
 
   t.end();
@@ -121,6 +121,7 @@ test( 'apply color 4', function( t ) {
     style: {}
   };
 
+  el.innerHTML = 'i should have colour set';
   color( el, toApply );
   backgroundColor( el, toApply );
 
@@ -132,5 +133,19 @@ test( 'apply color 4', function( t ) {
 
 function getEL() {
 
-  return document.createElement( 'div' );
+  var el;
+
+  try {
+      el = document.createElement( 'div' );
+
+      el.style.backgroundColor = '#CAFE00';
+      el.style.width = el.style.height = '100px';
+      document.body.appendChild(el);
+  } catch(e) {
+
+    el = {};
+    el.style = {};
+  }
+
+  return el;
 }
