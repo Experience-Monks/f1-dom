@@ -15,6 +15,8 @@ Supported properties and exmaple values are:
   perspective: 20, // perspective in pixels (only for 3d transforms)
   anchor: [ 0.33, 0.8 ], // this is equivalent to transform origin in %
   alpha: 0.5 // opacity
+  color: [ 11, 22, 33, 0.5 ],  // rgba values for color
+  backgroundColor: [ 22, 33, 44, 0.75 ] // rgba values for background-color
 }
 ```
 
