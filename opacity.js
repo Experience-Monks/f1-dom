@@ -1,7 +1,7 @@
-module.exports = function( item, data ) {
+module.exports = function(target, state) {
 
-  if( data.alpha !== undefined ) {
+  if(state.alpha !== undefined) {
 
-    item.style.opacity = data.alpha;
+    target.style.opacity = state.alpha;
   }
 };

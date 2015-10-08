@@ -1,12 +1,12 @@
 var escapeHtml = require( 'escape-html' );
 
-module.exports = function( item, data ) {
+module.exports = function(target, state) {
 
-  if( data.text ) {
+  if( state.text ) {
 
-    item.innerHTML = escapeHtml( data.text );
-  } else if( data.html ) {
+   target.innerHTML = escapeHtml(state.text);
+  } else if( state.html ) {
    
-    item.innerHTML = data.html;   
+   target.innerHTML = state.html;   
   }
 };
