@@ -2,9 +2,18 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-f1 animation parsing functions for the dom.
+`f1` animation parsing functions for the dom. `f1-dom` exports an object that looks like this:
+```javascript
+{
+    init: [function],
+    update: [function, function, function]
+}
+```
+Where the `Function` in the init `Array` will be run when `f1` initializes. In `f1-dom` the init function will check whether the `position` property is used if so it will set dom elements to be position absolute and in the top left corner of their container.
 
-Supported properties and exmaple values are:
+`update` functions will be called whenever `f1` has calculated the current state/intermediary state.
+
+Supported properties and example values are:
 
 ```javascript
 {
@@ -14,7 +23,9 @@ Supported properties and exmaple values are:
   rotation: [ 40.3, 23.4, 12 ], // 3d/2d rotation
   perspective: 20, // perspective in pixels (only for 3d transforms)
   anchor: [ 0.33, 0.8 ], // this is equivalent to transform origin in %
-  alpha: 0.5 // opacity
+  alpha: 0.5, // opacity
+  color: [255, 0, 255, 1], // rgba colour can also be rgb
+  backgroundColor: [255, 0, 255, 1] // rgba colour can also be rgb
 }
 ```
 
