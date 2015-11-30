@@ -12,7 +12,6 @@
   "dependencies": {
     "array-union": "^1.0.1",
     "dom-css": "^2.0.0",
-    "escape-html": "^1.0.1",
     "f1": "^6.3.3",
     "gl-mat4": "^1.0.2"
   },
