@@ -60,9 +60,14 @@ var ui = f1Dom({
     { from: 'out', to: 'idle', bi: true }
   ]
 })
-.init('out');
-
+.init('out')
+.go('idle');
 
 window.onclick = function() {
-  ui.go('idle');
-}
+
+  if(ui.state === 'idle') {
+    ui.go('out');  
+  } else {
+    ui.go('idle');
+  }
+};
