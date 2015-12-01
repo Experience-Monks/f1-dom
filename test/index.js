@@ -67,7 +67,9 @@ var ui = f1Dom({
           scale: [ 1, 1 ]
         }
       }
-    }
+    },
+
+    somethingThatDoesntExist: undefined
   },
 
   transitions: [
