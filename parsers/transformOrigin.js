@@ -1,9 +1,13 @@
 module.exports = function(target, state) {
 
-  if(Array.isArray(state.transformOrigin)) {
+  if(state.style && Array.isArray(state.style.transformOrigin)) {
     
-    var anchor = state.transformOrigin || [ 0.5, 0.5 ];
-    var cssValue = Math.round( anchor[ 0 ] * 100 ) + '% ' + Math.round( anchor[ 1 ] * 100 ) + '%';
+    var anchor = state.style.transformOrigin;
+    var cssValue = anchor
+    .map(function(value) {
+      return value * 100 + '%'
+    })
+    .join(' ');
 
     target.style[ 'transform-origin' ] = cssValue;
     target.style[ '--webkit-transform-origin' ] = cssValue;

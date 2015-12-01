@@ -11,47 +11,61 @@ var ui = f1Dom({
   states: {
     out: {
       item1: {
-        position: 'relative',
-        left: 10,
-        opacity: 0.3,
-        color: [ 255, 0, 255 ]
+        innerHTML: 'item1 out',
+        style: {
+          position: 'relative',
+          left: 10,
+          opacity: 0.3,
+          color: [ 255, 0, 255 ]
+        }
       },
 
       item2: {
-        position: 'relative',
-        left: 40,
-        opacity: 0.3,
-        backgroundColor: [ 255, 0, 255 ]
+        style: {
+          position: 'relative',
+          left: 40,
+          opacity: 0.3,
+          backgroundColor: [ 255, 0, 255 ]  
+        }
       },
 
       item3: {
-        transformOrigin: [ 0, 0 ],
-        translate: [ 100, 0, 0 ],
-        rotate: [ 0, 0, 90 ],
-        scale: [ 2, 2 ]
+        style: {
+          transformOrigin: [ 0, 0 ],
+          translate: [ 100, 0, 0 ],
+          rotate: [ 0, 0, 90 ],
+          scale: [ 2, 2 ]
+        }
       }
     },
 
     idle: {
       item1: {
-        position: 'relative',
-        left: 40,
-        opacity: 1,
-        color: [ 0, 0, 255 ]
+        innerHTML: 'item1 idle',
+        style: {
+          position: 'relative',
+          left: 40,
+          opacity: 1,
+          color: [ 0, 0, 255 ]  
+        }
       },
 
       item2: {
-        position: 'relative',
-        left: 10,
-        opacity: 1,
-        backgroundColor: [ 255, 0, 0 ]
+        style: {
+          position: 'relative',
+          left: 10,
+          opacity: 1,
+          backgroundColor: [ 255, 0, 0 ]
+        }
       },
 
       item3: {
-        transformOrigin: [ 0, 0 ],
-        translate: [ 0, 0, 0 ],
-        rotate: [ 0, 0, 0 ],
-        scale: [ 1, 1 ]
+        style: {
+          transformOrigin: [ 0, 0 ],
+          translate: [ 0, 0, 0 ],
+          rotate: [ 0, 0, 0 ],
+          scale: [ 1, 1 ]
+        }
       }
     }
   },

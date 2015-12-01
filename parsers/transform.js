@@ -1,4 +1,4 @@
-var getTransformMatrix = require('../getTransformMatrix');
+var getTransformMatrix = require('../lib/getTransformMatrix');
 
 module.exports = function(target, state) {
   
