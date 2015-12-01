@@ -8,7 +8,7 @@
 
 [![NPM](https://nodei.co/npm/f1-dom.png)](https://www.npmjs.com/package/f1-dom)
 
-[See the example running here in Requirebin.com](http://requirebin.com/?gist=e0f583f5503fd733d875)
+[See the example running here in Requirebin.com](http://requirebin.com/?gist=acd623a56bcbfe2133b1)
 
 ```javascript
 var f1DOM = require('f1-dom');
