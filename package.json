@@ -13,7 +13,8 @@
     "array-union": "^1.0.1",
     "dom-css": "^2.0.0",
     "f1": "^7.0.0",
-    "gl-mat4": "^1.0.2"
+    "gl-mat4": "^1.0.2",
+    "mat4-css-stringify": "^1.0.1"
   },
   "devDependencies": {
     "tape": "^4.0.0"

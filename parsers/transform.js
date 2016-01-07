@@ -1,4 +1,5 @@
 var getTransformMatrix = require('../lib/getTransformMatrix');
+var stringify = require('mat4-css-stringify');
 
 module.exports = function(target, state) {
   
@@ -9,12 +10,12 @@ module.exports = function(target, state) {
   if( transform ) {
 
     perspective = -1 / transform[ 11 ];
-    cssValue = 'perspective(' + perspective + 'px) matrix3d(' + Array.prototype.join.call( transform, ',' ) + ')';
+    cssValue = 'perspective(' + perspective + 'px) matrix3d(' + stringify(transform) + ')';
 
-   target.style.transform = cssValue;
-   target.style.webkitTransform = cssValue;
-   target.style.msTransform = cssValue;
-   target.style.mozTransform = cssValue;
-   target.style.ieTransform = cssValue;
+    target.style.transform = cssValue;
+    target.style.webkitTransform = cssValue;
+    target.style.msTransform = cssValue;
+    target.style.mozTransform = cssValue;
+    target.style.ieTransform = cssValue;
   }
 };
