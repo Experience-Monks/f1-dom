@@ -11,7 +11,6 @@ module.exports = function(target, state) {
 
     perspective = -1 / transform[ 11 ];
     cssValue = 'perspective(' + perspective + 'px) ' + stringify(transform);
-    console.log(stringify(transform));
 
     target.style.transform = cssValue;
     target.style.webkitTransform = cssValue;
