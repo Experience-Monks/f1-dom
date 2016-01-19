@@ -10,7 +10,7 @@ module.exports = function(target, state) {
   if( transform ) {
 
     perspective = -1 / transform[ 11 ];
-    cssValue = 'perspective(' + perspective + 'px) matrix3d(' + stringify(transform) + ')';
+    cssValue = 'perspective(' + perspective + 'px) ' + stringify(transform);
 
     target.style.transform = cssValue;
     target.style.webkitTransform = cssValue;
