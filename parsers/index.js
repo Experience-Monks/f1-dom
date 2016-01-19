@@ -5,6 +5,8 @@ module.exports = {
     require('./baseCSS'),
     require('./backgroundColor'),
     require('./color'),
+    require('./fill'),
+    require('./stroke'),
     require('./transform'),
     require('./transformOrigin')
   ]
