@@ -9,9 +9,11 @@ module.exports = function(target, state) {
     })
     .join(' ');
 
-    target.style[ 'transform-origin' ] = cssValue;
-    target.style[ '--webkit-transform-origin' ] = cssValue;
-    target.style[ '--ms-transform-origin' ] = cssValue;
-    target.style[ '--moz-transform-origin' ] = cssValue;
+
+    target.style.transformOrigin = cssValue;
+    target.style.webkitTransformOrigin = cssValue;
+    target.style.msTransformOrigin = cssValue;
+    target.style.MozTransformOrigin = cssValue;
+    target.style.OTransformOrigin = cssValue;
   }
 };
