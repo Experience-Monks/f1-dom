@@ -1,3 +1,16 @@
+# 8.0.2
+
+Fixes: 
+
+- `transform` is now set via building strings of tranformations vs building a matrix. This seems to be more consistent accross browsers.
+
+
+# 8.0.1
+
+Fixes:
+
+- A quick fix so the world doesnt break. Dropped in a perspective calculation into the matrix3d call because it seems that Chrome doesn't always render perspective properly.
+
 # 8.0.0
 
 Fixes:

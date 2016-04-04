@@ -1,16 +1,10 @@
 var getTransformMatrix = require('../lib/getTransformMatrix');
-var stringify = require('mat4-css-stringify');
 
 module.exports = function(target, state) {
   
-  var transform = getTransformMatrix(state);
-  var cssValue;
-  var perspective;
+  var cssValue = getTransformMatrix(state);
 
-  if( transform ) {
-
-    perspective = -1 / transform[ 11 ];
-    cssValue = stringify(transform);
+  if( cssValue ) {
 
     target.style.transform = cssValue;
     target.style.webkitTransform = cssValue;
