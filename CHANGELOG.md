@@ -1,3 +1,9 @@
+# 8.0.3
+
+Fixes:
+
+- Brought in the module `scientific-to-decimal` to convert all numbers passed to css `transform`. Safari does not allow for numbers in scientific notation in `transform`.
+
 # 8.0.2
 
 Fixes: 
