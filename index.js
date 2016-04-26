@@ -11,7 +11,7 @@ module.exports = function(settings) {
 
   settings.el = settings.el || document.body;
   settings.parsers = settings.parsers || { init: parsers.init.slice(), update: parsers.update.slice() };
-  settings.targets = {};
+  settings.targets = Object.assign({}, settings.targets);
 
   getTargetsFromStates(
     settings.el,
