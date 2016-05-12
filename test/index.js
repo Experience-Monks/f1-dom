@@ -73,7 +73,7 @@ var ui = f1Dom({
   },
 
   transitions: [
-    { from: 'out', to: 'idle', bi: true }
+    { from: 'out', to: 'idle', bi: true, animation: { duration: 4 } }
   ]
 })
 .init('out')
