@@ -34,7 +34,10 @@ var ui = f1Dom({
           transformOrigin: [ 0, 0 ],
           translate: [ 100, 0, 0 ],
           rotate: [ 0, 0, 90 ],
-          scale: [ 2, 2 ]
+          scale: [ 2, 2 ],
+          borderColor: [ 255, 0, 255 ],
+          borderWidth: 20,
+          borderStyle: 'solid'
         }
       }
     },
@@ -64,7 +67,10 @@ var ui = f1Dom({
           transformOrigin: [ 0, 0 ],
           translate: [ 0, 0, 0 ],
           rotate: [ 0, 0, 0 ],
-          scale: [ 1, 1 ]
+          scale: [ 1, 1 ],
+          borderColor: [ 0, 255, 0 ],
+          borderWidth: 20,
+          borderStyle: 'solid'
         }
       }
     },
