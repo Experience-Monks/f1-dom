@@ -1,6 +1,6 @@
 {
   "name": "f1-dom",
-  "version": "8.0.5",
+  "version": "8.0.6",
   "description": "f1 animation parsing functions for the dom",
   "main": "index.js",
   "license": "MIT",
