@@ -1,3 +1,9 @@
+# 8.0.4
+
+Fixes:
+
+- Added in the ability to require chief via `f1-dom/chief`
+
 # 8.0.3
 
 Fixes:
