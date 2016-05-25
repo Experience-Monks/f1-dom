@@ -2,7 +2,9 @@
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
 
-`f1-dom` wraps [`f1`](http://npmjs.com/f1) to animate style's of dom elements. `f1` is a UI animation library where you first define all the states of your UI and then by defining transitions between those states. For more information check out [`f1`'s documentation](http://npmjs.com/f1)
+`f1-dom` wraps [`f1`](http://npmjs.com/f1) to animate style's of dom elements. `f1` is a UI animation library where you first define all the states of your UI and then by defining transitions between those states. For more information check out [`f1`'s documentation](https://github.com/jam3/f1)
+
+`chief` is also exposed in the `f1-dom` module via `require('f1-dom/chief')`. For more information on `chief` see [`chief`'s documentation](https://github.com/jam3/f1#var-page--requiref1chiefopts)
 
 ## Usage
 
