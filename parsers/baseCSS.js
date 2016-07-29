@@ -7,6 +7,7 @@ module.exports = function(target, state) {
     }
   }
   catch(err){
-    console.error("Missing a style object in a state belonging to", target.getAttribute('data-f1'))
+    throw new Error("Missing a style object in a state belonging to "+ target.getAttribute('data-f1'));
+    console.log("STYLE:",state,"TARGET:",target)
   }
 };
