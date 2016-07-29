@@ -19,6 +19,6 @@ module.exports = function(target, state) {
     }
   }
   catch(err){
-    console.log("Transform Error")
+    console.warn("Could not apply transform to "+target.getAttribute('data-f1'));
   }
 };
