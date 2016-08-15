@@ -12,7 +12,7 @@
   "dependencies": {
     "array-union": "^1.0.1",
     "dom-css": "^2.0.0",
-    "f1": "^7.0.0",
+    "f1": "^8.0.0",
     "scientific-to-decimal": "^1.1.1"
   },
   "devDependencies": {
