@@ -7,6 +7,6 @@ module.exports = function(target, state) {
     }
   }
   catch(err){
-    throw new Error("Missing a valid state definition or style object belonging to "+ target.getAttribute('data-f1'));
+    throw new Error("Missing a valid state definition or style object belonging to '" + target.getAttribute('data-f1') + "'");
   }
 };
