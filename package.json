@@ -18,7 +18,9 @@
   "devDependencies": {
     "tape": "^4.0.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "budo test/ --open"
+  },
   "keywords": [
     "f1,ui,dom,html"
   ],

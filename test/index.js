@@ -15,7 +15,7 @@ var ui = f1Dom({
         style: {
           position: 'relative',
           left: 10,
-          opacity: 0.3,
+          alpha: 0,
           color: [ 255, 0, 255 ]
         }
       },
@@ -48,7 +48,7 @@ var ui = f1Dom({
         style: {
           position: 'relative',
           left: 40,
-          opacity: 1,
+          alpha: 1,
           color: [ 0, 0, 255 ]  
         }
       },
