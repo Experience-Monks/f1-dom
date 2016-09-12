@@ -37,7 +37,7 @@ button = f1DOM({
           margin: 10, // margin: 10px
           backgroundColor: [ 255, 0, 255 ], // rgb(255, 0, 255)
           cursor: 'pointer', // we can change this so why not
-          
+          alpha: 0, // Using alpha sets visbility: hidden when at 0 to prevent mouse events
           display: 'inline-block'
         }
       },
@@ -57,7 +57,7 @@ button = f1DOM({
           margin: 0, // margin: 0px
           backgroundColor: [ 255, 0, 0 ], // change the rgb values
           cursor: 'progress', // we can change this so why not
-          
+          alpha: 1, 
           display: 'inline-block'
         }
       },
@@ -110,6 +110,10 @@ transform: translateX(100px) translateY(200px) translateZ(300px)
 ```
 transformOrigin: 0% 100%
 ```
+
+#### alpha
+
+Using the keyword `alpha` (or `autoAlpha` to mimic gsap) instead of opacity will tween the opacity as you would expect, but it will also set the visibility property. It will set visibility to `hidden` when opacity is set to 0 and `visible` all other times. This will ensure hidden elements will not respond to mouse events.
 
 ## License
 
