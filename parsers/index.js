@@ -9,6 +9,7 @@ module.exports = {
     require('./fill'),
     require('./stroke'),
     require('./transform'),
-    require('./transformOrigin')
+    require('./transformOrigin'),
+    require('./alpha')
   ]
 };
